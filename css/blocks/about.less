@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.about {
+    margin: 11rem 0 12rem;
+}
+
+.about__inner {
+    display: flex;
+}
+
+.about__photo, 
+.about__content {
+    width: 50%;
+}
+
+.about__content {
+    padding-left: 3.5rem;
+}
+
+.about__photo {
+    
+    img {
+        display: block;
+        max-width: 100%;
+        margin-top: 5.5rem;
+
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px fade(@black, 35%);
+    }
+}
+
+.about__title {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.about__bigtitle {
+    margin: 0 0 2rem -1.5rem;
+    
+    font-size: 9.5rem;
+    color: fade(@black, 40%);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.about__text {
+    padding-right: 2rem;
+    margin-bottom: 5rem;
+    
+    line-height: 1.8;
+    color: fade(@black, 90%);
+}

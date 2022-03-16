@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Google -->
+    <meta name="description" content="houses">
+    <meta name="keywords" content="houses">
+    <meta name="robots" content="nofollow, noimageindex">
+    <meta name="google" content="notranslate">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Potfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    <!-- Button absolute -->
+    <button class="btn__abs" id="btnAbs" title="Быстро вернуться наверх" type="button">
+    <svg class="btn__abs-icon" viewBox="0 0 30.727 30.727">
+        <g>
+            <path d="M2.5,19.393c-0.64,0-1.278-0.244-1.768-0.73c-0.977-0.979-0.977-2.561,0-3.535L15.363,0.498l14.63,14.629
+            c0.978,0.975,0.978,2.559,0,3.535s-2.56,0.979-3.534,0L15.363,7.568L4.267,18.662C3.781,19.148,3.14,19.393,2.5,19.393z
+             M29.994,29.496c0.979-0.977,0.979-2.559,0-3.533l-14.63-14.632l-14.63,14.63c-0.978,0.977-0.978,2.561,0,3.535
+            c0.978,0.977,2.56,0.977,3.535,0L15.363,18.4l11.096,11.096c0.487,0.488,1.129,0.732,1.769,0.732
+            C28.869,30.229,29.506,29.984,29.994,29.496z" />
+        </g>
+    </svg>
+</button>
+    
+    <!-- Header -->
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+           
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="images/portrait.jpg" alt="Logo">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">Попов Максим</div>
+                    <div class="user__prof">Frontend - <br> разработчик</div>
+                </div>
+            </div>
+            
+            <nav class="nav">
+                <a class="nav__link" href="#" data-scroll="#works">Мои работы</a>
+                <a class="nav__link" href="#" data-scroll="#about">Обо мне</a>
+                <a class="nav__link" href="#" data-scroll="#news">Новости IT</a>
+                <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Связаться со мной</a>
+            </nav>
+        </div>
+    </div><!-- /.container -->
+</header>
+   
+    <!-- Intro -->
+    <section class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Меня зовут</h2>
+                <h1 class="intro__title">Попов Максим</h1>
+                <div class="intro__text">Я начинающий Frontend - разработчик</div>
+            
+                <div class="social">
+                    <a class="social__link" href="https://vk.com/xanter_peek" target="_blank">
+                        <img class="social__icon" src="images/social_icons/vk.png" alt="icon">
+                    </a>
+                    <a class="social__link" href="#" target="_blank">
+                        <img class="social__icon" src="images/social_icons/instagram.png" alt="icon">
+                    </a>
+                    <a class="social__link" href="https://t.me/Em4er0r" target="_blank">
+                        <img class="social__icon" src="images/social_icons/telegram.png" alt="icon">
+                    </a>
+                </div>
+                
+                <a class="btn" href="#" data-modal="#modal_hire_me">Связаться со мной</a>
+                <button class="btn" type="button">Моё портфолио</button>
+            </div>
+            
+            <img class="intro__photo" src="images/my-photo1.png" alt="Photo">
+        </div><!-- /.intro__inner -->
+    </div><!-- /.container -->
+</section>
+   
+    <!-- Works -->
+    <div class="works" id="works">
+    <div class="container">
+        <div class="works__nav">
+            <a class="works__nav-link" href="#" data-filter="all">Все работы</a>
+            <a class="works__nav-link" href="#" data-filter="website">Прoмо - сайты</a>
+            <a class="works__nav-link" href="#" data-filter="layout">Вёрстка</a>
+        </div>
+        
+        <div class="portfolio">
+            <div class="portfolio__col" data-cat="website">
+                <div class="work">
+                    <a href="https://karma-websites.github.io/ghostbusters/" target="_blank">
+                        <img class="work__image" src="images/works/chostbusters.jpg" alt="Work">
+                        <div class="work__content">
+                            <div class="work__cat">Промо - сайт к фильму</div>
+                            <div class="work__title">
+                            "Chostbusters"
+                                <time class="work__date">2021</time>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio__col" data-cat="website">
+                <div class="work">
+                    <a href="https://karma-websites.github.io/spacex/" target="_blank">
+                        <img class="work__image" src="images/works/spacex.jpg" alt="Work">
+                        <div class="work__content">
+                            <div class="work__cat">Промо - сайт компании</div>
+                            <div class="work__title">
+                                SpaceX
+                                <time class="work__date">2021</time>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio__col" data-cat="website">
+                <div class="work">
+                    <a href="https://karma-websites.github.io/the_witcher/" target="_blank">
+                        <img class="work__image" src="images/works/the-witcher.jpg" alt="Work">
+                        <div class="work__content">
+                            <div class="work__cat">Промо - сайт к сериалу</div>
+                            <div class="work__title">
+                                Ведьмак
+                                <time class="work__date">2019</time>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio__col" data-cat="layout">
+                <div class="work">
+                   <a href="https://karma-websites.github.io/mogo/" target="_blank">
+                        <img class="work__image" src="images/works/mogo.PNG" alt="Work">
+                        <div class="work__content">
+                            <div class="work__cat">Вёрстка макета</div>
+                            <div class="work__title">
+                                Mogo
+                                <time class="work__date">2020</time>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio__col" data-cat="layout">
+                <div class="work">
+                    <a href=" https://karma-websites.github.io/pizza/" target="_blank">
+                        <img class="work__image" src="images/works/pizza.jpg" alt="Work">
+                        <div class="work__content">
+                            <div class="work__cat">Вёрстка макета</div>
+                            <div class="work__title">
+                                Pizza
+                                <time class="work__date">2020</time>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="portfolio__col" data-cat="layout">
+                <div class="work">
+                    <a href="https://karma-websites.github.io/houses/" target="_blank">
+                        <img class="work__image" src="images/works/houses.jpg" alt="Work">
+                        <div class="work__content">
+                            <div class="work__cat">Вёрстка макета</div>
+                            <div class="work__title">
+                                Houses
+                                <time class="work__date">2020</time>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- /.portfolio -->
+        
+        <div class="text-center">
+            <a class="btn btn--sm" href="">Load more works</a>
+        </div>
+    </div><!-- /.container -->
+</div><!-- /.works --> 
+   
+    <!-- About --> 
+    <section class="about" id="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="images/about.jpg" alt="photo">
+            </div>
+            <div class="about__content">
+                <h3 class="about__title">Обо мне</h3>
+                <h2 class="about__bigtitle">Кто я?</h2>
+                <div class="about__text">
+                    <p>Меня зовут Попов Максим Витальевич. Я учусь в 11А классе, увлекаюсь математикой и информатикой, мне также нравится физика, поэтому я считаю, что больше склон к точным наукам. сейчас я развиваюся в сфере Frontend - разработки, и поэтому хочу попробовать себя в работе над настоящим проетом. Расскажу немного о себе.</p>
+                    <p>В течение нескольких лет я посещал кружок авиамоделирования, где занимался конструированием моделей самолётов. Кроме этого посещал кружок робототехники и программирования, которые в некоторой степени послужили началом для моей самостоятельной деятельности в IT сфере. Я выбрал специальность frontend - разработчика, потому что мне приносит удовольствие сам процесс написания структуры сайта, когда ты воплощаешь задумку дизайнера при помощи html и css.</p>
+                    <p>Моими главными качетвами я считаю высокую роботоспособность, логическое мышление, быструю обучаемость новому, аккуратность, умение и желание работать, в том числе и в команде единомышленников. Я люблю заниматься спортом, читать и особенно путешествовать, именно из этих увлечений я черпаю вдохновение для своих новых проектов.</p>
+                </div>
+                <a class="btn" href="#" data-modal="#modal_hire_me">Связаться со мной</a>
+                <button class="btn" type="button">Моё портфолио</button>
+            </div><!-- /.about__content -->
+        </div><!-- /.about__inner -->
+    </div><!-- /.container -->
+</section>
+   
+    <!-- Reviews -->
+    <div class="reviews">
+    <div class="container">
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam consequuntur, ipsam explicabo deserunt illo cupiditate tempore fugiat labore nobis distinctio laudantium, sequi repudiandae natus expedita ex quas quisquam sapiente!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quam consequuntur, ipsam explicabo deserunt illo cupiditate tempore fugiat labore nobis distinctio laudantium, sequi repudiandae natus expedita ex quas quisquam sapiente!</p>
+            </div>
+            
+            <div class="reviews__author">
+                <img class="reviews__photo" src="https://place-hold.it/200x200/333" alt="Author">
+                <div class="reviews__name">Edward M. Brooks</div>
+                <div class="reviews__company">Marketing House</div>
+            </div>
+        </div><!-- /.reviews__items -->
+    </div><!-- /.container -->
+</div><!-- /.reviews -->
+   
+    <!-- News -->
+    <section class="news" id="news">
+    <div class="container">
+       <div class="news__header">
+           <h3 class="news__title">Это интересно</h3>
+           <div class="news__text">Самые актуальные новости из мира высоких технологий</div>
+       </div>
+       
+       <div class="articles">
+           <div class="articles__col">
+               <div class="articles__item">
+                   <div class="articles__header">
+                       <time class="articles__date">
+                           14 <br>марта
+                       </time>
+                       <a href="https://hi-tech.news/smartphone/3737-jetot-xiaomi-za-500-dollarov-po-moschnosti-ugrozhaet-dazhe-iphone-13.html" target="_blank">
+                            <img src="images/news/1.png" alt="New" class="articles__photo">
+                       </a>
+                   </div>
+                   <div class="articles__content">
+                       <h4 class="articles__title">
+                           <a href="https://hi-tech.news/smartphone/3737-jetot-xiaomi-za-500-dollarov-po-moschnosti-ugrozhaet-dazhe-iphone-13.html" target="_blank">Этот Xiaomi за 500 долларов по мощности угрожает даже iPhone 13</a>
+                       </h4>
+                       <div class="articles__cat">Смартфоны</div>
+                       <div class="articles__text">
+                            О том, что MediaTek Dimensity 9000 — мощная система, известно давно. Сегодня мы увидели окончательное доказательство, взятое из теста Geekbench. IceUniverse, хорошо информированный инсайдер в области...
+                       </div>
+                   </div>
+                   <a class="btn btn--sm" href="https://hi-tech.news/smartphone/3737-jetot-xiaomi-za-500-dollarov-po-moschnosti-ugrozhaet-dazhe-iphone-13.html" target="_blank">Подробнее</a>
+               </div><!-- /.articles__item -->
+           </div><!-- /.articles__col -->
+           
+           <div class="articles__col">
+               <div class="articles__item">
+                   <div class="articles__header">
+                       <time class="articles__date">
+                           14 <br>марта
+                       </time>
+                       <a href="https://hi-tech.news/internet/3735-steam-kak-proverit-stoimost-akkaunta.html" target="_blank">
+                            <img src="images/news/2.png" alt="New" class="articles__photo">
+                       </a>
+                   </div>
+                   <div class="articles__content">
+                       <h4 class="articles__title">
+                           <a href="https://hi-tech.news/internet/3735-steam-kak-proverit-stoimost-akkaunta.html" target="_blank">Steam: как проверить стоимость аккаунта?</a>
+                       </h4>
+                       <div class="articles__cat">Интернет</div>
+                       <div class="articles__text">
+                           Возможно, в какой-то момент вас спросят, сколько на самом деле стоит ваш Steam-аккаунт — особенно если у вас накопилось много разных игр и DLC за долгие годы гейминга. В таких случаях часто возникает...
+                       </div>
+                   </div>
+                   <a class="btn btn--sm" href="https://hi-tech.news/internet/3735-steam-kak-proverit-stoimost-akkaunta.html" target="_blank">Подробнее</a>
+               </div><!-- /.articles__item -->
+           </div><!-- /.articles__col -->
+           
+           <div class="articles__col">
+               <div class="articles__item">
+                   <div class="articles__header">
+                       <time class="articles__date">
+                           11 <br>марта
+                       </time>
+                       <a href="https://hi-tech.news/space/3728-solar-orbiter-skoro-sdelaet-samye-blizkie-snimki-solnca-v-istorii.html" target="_blank">
+                            <img src="images/news/3.png" alt="New" class="articles__photo">
+                       </a>
+                   </div>
+                   <div class="articles__content">
+                       <h4 class="articles__title">
+                           <a href="https://hi-tech.news/space/3728-solar-orbiter-skoro-sdelaet-samye-blizkie-snimki-solnca-v-istorii.html" target="_blank">Solar Orbiter скоро сделает самые близкие снимки Солнца в истории</a>
+                       </h4>
+                       <div class="articles__cat">Космос</div>
+                       <div class="articles__text">
+                           Solar Orbiter — это совместное предприятие ЕКА и НАСА. В 2020 году корабль установил рекорд и сфотографировал Солнце с самого близкого расстояния в истории. Теперь космический аппарат готовится...
+                       </div>
+                   </div>
+                   <a class="btn btn--sm" href="https://hi-tech.news/space/3728-solar-orbiter-skoro-sdelaet-samye-blizkie-snimki-solnca-v-istorii.html" target="_blank">Подробнее</a>
+               </div><!-- /.articles__item -->
+           </div><!-- /.articles__col -->
+       </div><!-- /.articles -->
+       
+       <div class="news__footer">
+           <a class="news__link" href="https://hi-tech.news/" target="_blank">Узнать больше</a>
+       </div>
+        
+    </div><!-- /.container -->
+</section>
+   
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2022 Попов Максим
+                </div>
+                <div class="footer__social">
+                    <a class="footer__link" href="#" target="_blank">
+                        <img class="footer__icon" src="images/social_icons/vk.png" alt="icon">
+                    </a>
+                    <a class="footer__link" href="#" target="_blank">
+                        <img class="footer__icon" src="images/social_icons/instagram.png" alt="icon">
+                    </a>
+                    <a class="footer__link" href="#" target="_blank">
+                        <img class="footer__icon" src="images/social_icons/telegram.png" alt="icon">
+                    </a>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#" class="footer__nav-link" data-scroll="#works">Мои работы</a>
+                <a href="#" class="footer__nav-link" data-scroll="#about">Обо мне</a>
+                <a href="#" class="footer__nav-link" data-scroll="#news">Новости</a>
+                <a href="#" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_hire_me">Связаться со мной</a>
+            </nav>
+        </div><!-- /.footer__inner -->
+    </div><!-- /.container -->
+</footer>
+
+    <!-- Modals -->
+    <div class="modal" id='modal_hire_me'>
+    <div class="modal__dialog">
+       <button class="modal__close" type="button" data-close>
+           <svg class="svg" viewBox="0 0 24 24">
+               <g>   
+                   <path d="M12,2C6.47,2,2,6.47,2,12c0,5.53,4.47,10,10,10s10-4.47,10-10C22,6.47,17.53,2,12,2z M16.707,15.293 c0.391,0.391,0.391,1.023,0,1.414C16.512,16.902,16.256,17,16,17s-0.512-0.098-0.707-0.293L12,13.414l-3.293,3.293 C8.512,16.902,8.256,17,8,17s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L10.586,12L7.293,8.707 c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0L12,10.586l3.293-3.293c0.391-0.391,1.023-0.391,1.414,0 s0.391,1.023,0,1.414L13.414,12L16.707,15.293z"/>
+               </g> 
+           </svg>
+       </button>
+       
+       <div class="modal__content">
+           <div class="contact">
+               <div class="contact__left">
+                   <h3 class="modal__title">Мои контакты</h3>
+                   <h4 class="modal__subtitle">Позвоните мне или напишите</h4>
+                   <ul class="contact__info">
+                       <li class="contact__info-item">
+                           <a href="tel:+79502538323">
+                               <img  class="contact__info-icon" src="images/icons/call.png" alt="">
+                           </a>
+                           <a class="contact__link" href="tel:+79502538323">
+                               +7-950-253-8323
+                           </a>
+                       </li>
+                       <li class="contact__info-item">
+                           <a href="mailto:thunder.maks@mail.ru">
+                               <img class="contact__info-icon" src="images/icons/mail.png" alt="">
+                           </a>
+                           <a class="contact__link" href="mailto:thunder.maks@mail.ru">
+                               thunder.maks@mail.ru
+                           </a>
+                       </li>
+                   </ul>
+                   
+                   <form class="form" action="/" method="post">
+                       <div class="form__group">
+                           <input class="form__input" name="input-email" type="text" placeholder="Ваш электронный адрес">
+                       </div>
+                       <div class="form__group">
+                           <textarea class="form__textarea" name="input-text" placeholder="Ваше сообщение"></textarea> 
+                       </div>
+                       <div class="text-right">
+                           <button class="btn" type="submit">Отправить</button>
+                       </div>
+                   </form>
+               </div><!-- /.contact__left -->
+
+               <div class="contact__right">
+                   <img src="images/my-photo2.png" alt="">
+               </div>
+           </div><!-- /.content -->
+       </div><!-- /.modal__content -->
+    </div><!-- /.modal__dialog -->
+</div>
+   
+<!-- JS -->
+<script src="js/app.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+

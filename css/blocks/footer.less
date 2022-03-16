@@ -1,0 +1,98 @@
+// main: ../style.less
+
+.footer {
+    padding: 2rem 0;
+    
+    background-color: @black;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__credits {
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright {
+    padding-right: 3rem;
+    margin-right: 3rem;
+    
+    color: @gray;
+    
+    border-right: 1px solid @gray;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    
+    a {
+        margin-right: 1.5rem;
+        text-decoration: none;
+    }
+}
+
+.footer__link {
+    transition: transform .2s linear;
+    
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.footer__icon {
+    display: block;
+    width: 30px;
+    height: auto;
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer__nav-link {
+    margin-left: 3rem;
+    
+    color: @gray;
+    text-decoration: none;
+    
+    &:hover {
+        color: @white;
+        text-decoration: underline;
+    }
+    
+    &--btn {
+        padding: .8rem 2.5rem;
+        border-radius: 20px;
+        border: 1px solid @gray-light;
+        
+        transition: background-color .2s linear, color .2s linear, border-color .2s linear;
+        
+        &:hover {
+            text-decoration: none;
+            border-color: @white;
+            background-color: @white;
+            color: @black;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
